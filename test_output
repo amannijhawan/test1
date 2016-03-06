@@ -1,0 +1,6 @@
+Dict: ['cow', 'com', 'boo', 'soo', 'coo', 'co', 'so', 'cobo', 'show', 'boshow', 'bow', 'mow', 'cobomshow', 'c', 'o', 'b', 'o', 'm', 's', 'h', 'o', 'w']
+L=4 ['cobo', 'show']
+L=3 ['coo', 'com', 'mow', 'boo', 'bow', 'cow']
+L=6 ['boshow']
+L=9 ['cobomshow']
+L=1 ['c', 'o', 'b', 'm', 's', 'h', 'w']
