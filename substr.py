@@ -1,3 +1,6 @@
+# Generating substrings of a string with variable sized holes. 
+# Unoptimized
+
 D = ['cow' ,'com','boo', 'soo', 'coo', 'co', 'so', 'cobo', 'show', 'boshow', 'bow', 'mow', 'cobomshow']
 D.extend(list('cobomshow'))
 
