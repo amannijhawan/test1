@@ -1,6 +1,25 @@
-Dict: ['cow', 'com', 'boo', 'soo', 'coo', 'co', 'so', 'cobo', 'show', 'boshow', 'bow', 'mow', 'cobomshow', 'c', 'o', 'b', 'o', 'm', 's', 'h', 'o', 'w']
-L=4 ['cobo', 'show']
-L=3 ['coo', 'com', 'mow', 'boo', 'bow', 'cow']
-L=6 ['boshow']
-L=9 ['cobomshow']
-L=1 ['c', 'o', 'b', 'm', 's', 'h', 'w']
+================================================================================
+String: cobomshow
+Length: 4
+Dictionary: ['cow', 'com', 'boo', 'soo', 'coo', 'co', 'so', 'cobo', 'show', 'boshow', 'bow', 'mow', 'cobomshow', 'c', 'o', 'b', 'o', 'm', 's', 'h', 'o', 'w']
+Output :['cobo', 'show']
+================================================================================
+String: cobomshow
+Length: 3
+Dictionary: ['cow', 'com', 'boo', 'soo', 'coo', 'co', 'so', 'cobo', 'show', 'boshow', 'bow', 'mow', 'cobomshow', 'c', 'o', 'b', 'o', 'm', 's', 'h', 'o', 'w']
+Output :['coo', 'com', 'mow', 'boo', 'bow', 'cow']
+================================================================================
+String: cobomshow
+Length: 6
+Dictionary: ['cow', 'com', 'boo', 'soo', 'coo', 'co', 'so', 'cobo', 'show', 'boshow', 'bow', 'mow', 'cobomshow', 'c', 'o', 'b', 'o', 'm', 's', 'h', 'o', 'w']
+Output :['boshow']
+================================================================================
+String: cobomshow
+Length: 9
+Dictionary: ['cow', 'com', 'boo', 'soo', 'coo', 'co', 'so', 'cobo', 'show', 'boshow', 'bow', 'mow', 'cobomshow', 'c', 'o', 'b', 'o', 'm', 's', 'h', 'o', 'w']
+Output :['cobomshow']
+================================================================================
+String: cobomshow
+Length: 1
+Dictionary: ['cow', 'com', 'boo', 'soo', 'coo', 'co', 'so', 'cobo', 'show', 'boshow', 'bow', 'mow', 'cobomshow', 'c', 'o', 'b', 'o', 'm', 's', 'h', 'o', 'w']
+Output :['c', 'o', 'b', 'm', 's', 'h', 'w']

@@ -1,6 +1,6 @@
 D = ['cow' ,'com','boo', 'soo', 'coo', 'co', 'so', 'cobo', 'show', 'boshow', 'bow', 'mow', 'cobomshow']
 D.extend(list('cobomshow'))
-print "Dict:" , D
+
 def findallsubstrs(S,L):
     substrs = []
     for i in range(len(S)-L+1):
@@ -10,6 +10,9 @@ def findallsubstrs(S,L):
 
 
 def findsubstrs(S,L,D):
+    print 'String: %s' % S
+    print 'Length: %d'  % L
+    print 'Dictionary: %s' % D  
     if L > len(S):
 	return []
     substrs = []
@@ -28,4 +31,5 @@ def findsubstrs(S,L,D):
 
 
 for L in (4,3,6,9,1):
-    print 'L=%d %s' %(L,findsubstrs('cobomshow', L , D)) 
+    print '='*80
+    print "Output :%s" % findsubstrs('cobomshow', L , D)
