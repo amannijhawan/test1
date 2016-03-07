@@ -6,7 +6,9 @@ D.extend(list('cobomshow'))
 _cache = {}
 
 def findallsubstrs(S,L):
-    # memoize this since this inner loop is called many times
+    # memoize this since this inner loop is called 
+    # multiple time atleast for the 0 sized loop
+
     if (S,L) in _cache:
 	return _cache[(S,L)]
     substrs = []
@@ -21,9 +23,11 @@ def findsubstrs(S,L,D):
     print 'String: %s' % S
     print 'Length: %d'  % L
     print 'Dictionary: %s' % D  
+
     if L > len(S):
         return []
-    substrs = []
+
+    substrs = set() 
     n = len(S) + 1
     holesizemin = 0
     holesizemax = n - L
@@ -33,8 +37,8 @@ def findsubstrs(S,L,D):
             for substr in findallsubstrs(validsubstr,L):
                 if substr in D:
                     if substr not in substrs:
-                        substrs.append(substr)
-    return substrs 
+                        substrs.add(substr)
+    return list(substrs)
      
 
 

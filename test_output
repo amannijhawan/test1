@@ -7,7 +7,7 @@ Output :['cobo', 'show']
 String: cobomshow
 Length: 3
 Dictionary: ['cow', 'com', 'boo', 'soo', 'coo', 'co', 'so', 'cobo', 'show', 'boshow', 'bow', 'mow', 'cobomshow', 'c', 'o', 'b', 'o', 'm', 's', 'h', 'o', 'w']
-Output :['coo', 'com', 'mow', 'boo', 'bow', 'cow']
+Output :['cow', 'mow', 'bow', 'boo', 'com', 'coo']
 ================================================================================
 String: cobomshow
 Length: 6
@@ -22,4 +22,4 @@ Output :['cobomshow']
 String: cobomshow
 Length: 1
 Dictionary: ['cow', 'com', 'boo', 'soo', 'coo', 'co', 'so', 'cobo', 'show', 'boshow', 'bow', 'mow', 'cobomshow', 'c', 'o', 'b', 'o', 'm', 's', 'h', 'o', 'w']
-Output :['c', 'o', 'b', 'm', 's', 'h', 'w']
+Output :['c', 'b', 'h', 'm', 'o', 's', 'w']
