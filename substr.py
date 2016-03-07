@@ -7,8 +7,7 @@ _cache = {}
 
 def findallsubstrs(S,L):
     # memoize this since this inner loop is called 
-    # multiple time atleast for the 0 sized loop
-
+    # multiple times
     if (S,L) in _cache:
         return _cache[(S,L)]
     substrs = []
