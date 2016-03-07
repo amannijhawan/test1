@@ -10,7 +10,7 @@ def findallsubstrs(S,L):
     # multiple time atleast for the 0 sized loop
 
     if (S,L) in _cache:
-	return _cache[(S,L)]
+        return _cache[(S,L)]
     substrs = []
     for i in range(len(S)-L+1):
         substr = S[i:i+L]
@@ -26,10 +26,10 @@ def findsubstrs(S,L,D):
 
     if L > len(S):
         return []
-
-    substrs = set() 
+    # for 0 sized holes
+    substrs = set([x for x in findallsubstrs(S,L) if x in D]) 
     n = len(S) + 1
-    holesizemin = 0
+    holesizemin = 1
     holesizemax = n - L
     for holesize in range(holesizemin, holesizemax):
         for holepos in range(0,n):
