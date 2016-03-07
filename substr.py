@@ -6,8 +6,10 @@ D.extend(list('cobomshow'))
 _cache = {}
 
 def findallsubstrs(S,L):
-    # memoize this since this inner loop is called 
-    # multiple times
+    # memoize this since this inner loop could be
+    # called mmultiple time if same string is 
+    # somehow repeated, this depends on the 
+    # input pattern
     if (S,L) in _cache:
         return _cache[(S,L)]
     substrs = []
@@ -31,7 +33,7 @@ def findsubstrs(S,L,D):
     holesizemin = 1
     holesizemax = n - L
     for holesize in range(holesizemin, holesizemax):
-        for holepos in range(0,n):
+        for holepos in range(0,n-holesize):
             validsubstr = ''.join([S[0:holepos],S[holepos+holesize:]])
             for substr in findallsubstrs(validsubstr,L):
                 if substr in D:
